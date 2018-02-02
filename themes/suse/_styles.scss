@@ -1,14 +1,40 @@
-#splash {background-color: #00243e;}
-#splash .panel, .panel-default > .panel-heading, .panel-footer {background-color: #00243e; color: #ffffff; border: 0;}
-#splash input { color: #ffffff; background-color: #003159; border-color: #001727;}
+@import "./_variables.scss";
+
+.navbar-brand > img {
+  display: inline-block;
+  height: 35px;
+  vertical-align: bottom;
+  margin-left: -4px;
+}
+.navbar-brand {
+  &.suse {
+    background: $blue-darker;
+    padding-right: 0px;
+  }
+}
+
+#splash {
+  background-color: $blue-dark;
+}
+#splash .panel, .panel-default > .panel-heading, .panel-footer {
+  background-color: $blue-dark;
+  color: #ffffff;
+  border: 0;
+}
+#splash input {
+  color: #ffffff;
+  background-color: $blue-darker;
+  border-color: #001727;
+}
+
 #sidebar .panel {
     color: #fff;
-    background: #00243e;
+    background: $blue-dark;
 }
 
 #sidebar .panel > a {
     color: #fff;
-    background: #00243e;
+    background: $blue-dark;
 }
 
 #sidebar .panel > a:hover {
